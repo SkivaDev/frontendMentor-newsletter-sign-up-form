@@ -10,7 +10,7 @@ function SignupForm() {
   };
 
   return (
-    <div className="w-[650px] h-[450px] bg-white p-[20px] rounded-3xl m-[25px] ">
+    <div className="w-[650px] h-[450px] bg-white p-[20px] rounded-3xl m-[25px] shadow-2xl">
       <form className="w-full h-full flex gap-12" onSubmit={handleSubmit}>
         <div className=" flex-1 mt-[32px] ml-[16px]">
           <label className="text-[42px] font-bold text-slate-gray" htmlFor="email">Stay updated!</label>
@@ -34,14 +34,15 @@ function SignupForm() {
               <div>Email address</div>
               <div>Valid email required</div>
             </div>
-            <div className="w-full h-[45px] bg-transparent  p-[15px] flex justify-center rounded-md border border-gray">
-              <input type="email" className="w-full h-full text-[14px] outline-none" placeholder="email@company.com"/>
+            <div className="w-full h-[45px] bg-transparent  p-[15px] flex justify-center rounded-md border border-gray ">
+              <input type="email" className="w-full h-full text-[14px] outline-none cursor-pointer" placeholder="email@company.com"/>
             </div>
           </div>
 
-          <button className="flex justify-center items-center h-[45px] w-full text-[13px] font-bold bg-slate-gray text-white rounded-md" type="submit">Subscribe to monthly newsletter</button>
+          <button className="submitBtn flex justify-center items-center h-[45px] w-full text-[13px] font-bold bg-slate-gray text-white rounded-md" type="submit">Subscribe to monthly newsletter</button>
         </div>
         <div className="flex-1 h-full bg-cover bg-center rounded-xl" style={{ backgroundImage: `url(${signUpDesktop})` }}>
+
         </div>
       </form>
     </div>
