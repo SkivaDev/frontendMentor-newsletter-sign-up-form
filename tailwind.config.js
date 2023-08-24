@@ -8,6 +8,16 @@ export default {
     extend: {
       backgroundColor: {
         'slate-gray': 'hsl(234, 29%, 20%)',
+        'gray': 'hsl(231, 7%, 60%)',
+        'tomato': 'hsl(4, 100%, 67%)'
+      },
+      colors: {
+        'slate-gray': 'hsl(234, 29%, 20%)',
+        'gray': 'hsl(231, 7%, 60%)',
+        'tomato': 'hsl(4, 100%, 67%)'
+      },
+      borderColor: {
+        'gray': '#9ca3c1',
       },
     },
   },
