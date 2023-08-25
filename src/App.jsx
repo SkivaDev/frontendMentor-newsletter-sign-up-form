@@ -8,7 +8,7 @@ import SignupForm from './components/SignupForm'
 
 function App() {
 
-  const [isSummited, setIsSummited] = useState(false);
+  const [isSummited, setIsSummited] = useState(true);
   const [email, setEmail] = useState('');
 
   return (
