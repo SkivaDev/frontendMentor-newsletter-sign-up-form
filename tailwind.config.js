@@ -19,6 +19,9 @@ export default {
       borderColor: {
         'gray': '#9ca3c1',
       },
+      screens: {
+        'desk': '700px',
+      },
     },
   },
   plugins: [],

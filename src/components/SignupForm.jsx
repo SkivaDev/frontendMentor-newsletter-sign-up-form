@@ -10,22 +10,22 @@ function SignupForm() {
   };
 
   return (
-    <div className="w-[650px] h-[450px] bg-white p-[20px] rounded-3xl m-[25px] shadow-2xl">
-      <form className="w-full h-full flex gap-12" onSubmit={handleSubmit}>
-        <div className=" flex-1 mt-[32px] ml-[16px]">
+    <div className="desk:w-[650px] desk:h-[450px] w-full h-full bg-white desk:p-[20px] desk:rounded-3xl desk:m-[25px] desk:shadow-2xl">
+      <form className="w-full h-full flex desk:gap-12 desk:flex-row flex-col-reverse" onSubmit={handleSubmit}>
+        <div className=" desk:flex-1 h-[70%] desk:mt-[32px] desk:ml-[16px] desk:p-[0px] p-[20px]">
           <label className="text-[42px] font-bold text-slate-gray" htmlFor="email">Stay updated!</label>
-          <p className="text-[12px] mb-[20px]">Join 60,000+ product managers receiving monthly updates on:</p>
+          <p className="desk:text-[12px] desk:m-0 desk:mb-[20px] my-[20px] text-[14px]">Join 60,000+ product managers receiving monthly updates on:</p>
           <div className="flex flex-col gap-2 mb-[30px]">
-            <div className="flex text-[12px] items-center gap-2">
-              <img className="h-[17px]" src={iconList} alt="icon-list" />
+            <div className="flex desk:text-[12px] text-[14px] desk:items-center gap-2">
+              <img className="desk:h-[17px] h-[19px]" src={iconList} alt="icon-list" />
               Product discovery and building what matters
             </div>
-            <div className="flex text-[12px] items-center gap-2">
-              <img className="h-[17px]" src={iconList} alt="icon-list" />
+            <div className="flex desk:text-[12px] text-[14px] desk:items-center gap-2">
+              <img className="desk:h-[17px] h-[19px]" src={iconList} alt="icon-list" />
               Measuring to ensure updates are a success
             </div>
-            <div className="flex text-[12px] items-center gap-2">
-              <img className="h-[17px]" src={iconList} alt="icon-list" />
+            <div className="flex desk:text-[12px] text-[14px] desk:items-center gap-2">
+              <img className="desk:h-[17px] h-[19px]" src={iconList} alt="icon-list" />
               And much more!
             </div>
           </div>
@@ -41,7 +41,7 @@ function SignupForm() {
 
           <button className="submitBtn flex justify-center items-center h-[45px] w-full text-[13px] font-bold bg-slate-gray text-white rounded-md" type="submit">Subscribe to monthly newsletter</button>
         </div>
-        <div className="flex-1 h-full bg-cover bg-center rounded-xl" style={{ backgroundImage: `url(${signUpDesktop})` }}>
+        <div className="desk:flex-1 h-[30%] desk:h-full bg-cover bg-center rounded-b-3xl desk:rounded-xl" style={{ backgroundImage: `url(${window.innerWidth >= 700 ? signUpDesktop : signUpMobile})` }}>
 
         </div>
       </form>
