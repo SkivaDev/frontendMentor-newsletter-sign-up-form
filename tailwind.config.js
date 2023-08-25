@@ -18,9 +18,13 @@ export default {
       },
       borderColor: {
         'gray': '#9ca3c1',
+        'tomato': 'hsl(4, 100%, 67%)',
       },
       screens: {
         'desk': '700px',
+      },
+      placeholderColor: {
+        'tomato': 'hsl(4, 100%, 67%)',
       },
     },
   },
