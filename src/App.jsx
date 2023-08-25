@@ -13,7 +13,7 @@ function App() {
 
   return (
     <main className="flex justify-center items-center w-full h-screen">
-      {isSummited ? (<ThankYouCard email={email}/>):(<SignupForm setIsSummited={setIsSummited} setEmail={setEmail} email={email}/>)}
+      {isSummited ? (<ThankYouCard email={email} setIsSummited={setIsSummited}/>):(<SignupForm setIsSummited={setIsSummited} setEmail={setEmail}/>)}
     </main>
   )
 }

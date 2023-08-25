@@ -4,10 +4,10 @@ import iconList from "../assets/images/icon-list.svg";
 import signUpDesktop from "../assets/images/illustration-sign-up-desktop.svg";
 import signUpMobile from "../assets/images/illustration-sign-up-mobile.svg";
 
-function SignupForm() {
-  const onSubmit = (e) => {
-    e.preventDefault();
-    console.log("submit");
+function SignupForm({setIsSummited, setEmail}) {
+  const onSubmit = (data) => {
+    setEmail(data.email)
+    setIsSummited(true)
   };
 
   const {
